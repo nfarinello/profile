@@ -3,23 +3,12 @@
   --secondary-color: #f9f7fe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+}
 
-}
-.container{
-  border: #272142;
-  width: 2000px;   /* This sets the width */
-  margin: 0 auto;
-}
 body {
   font-family: var(--default-font-family);
-  background-color: #FFF7F1;
 }
 
-.img-fluid{
-  border-radius: 30%;
-  border: dotted #272142,
-
-}
 h1,
 h2,
 h3,
@@ -48,14 +37,12 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  border-style: dotted #272142;
 }
 
 .hero {
-  background-color: #C3ACD0;
+  background: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
-  border-radius: 20%;
 }
 .hero p {
   font-size: 36px;
@@ -95,14 +82,12 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
-  border-radius:5%;
-  border-style: none;
 }
 
 .btn-branding-outline {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
-  border-radius:10px;
+  border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
@@ -141,18 +126,17 @@ p {
   margin: 30px;
 }
 
+.logo {
+  max-height: 45px;
+}
+
 nav {
   padding: 20px 0;
-  border: none #272142;
-  background-color: #C3ACD0;
-  display: flex;
-  flex-grow: 1;
 }
 
 nav ul {
   padding: 0;
   margin: 0;
-
 }
 
 nav li {
@@ -166,22 +150,11 @@ nav a {
   text-decoration: none;
   color: #272142;
   transition: all 100ms ease-in-out;
-  border: none #272142;
-  padding: 10px;
-  border-radius: 8%;
-}
-
-.social-links{
-  color:#272142;
-padding: 5px;
-  font-size: 40px;
-  background-color: #C3ACD0;
-
 }
 
 nav a:hover,
 nav li.active a {
-  color:#6C22A6;
+  color: var(--branding-color);
 }
 
 footer {
@@ -211,11 +184,11 @@ footer .email-link:hover {
 
 footer .social-links a {
   margin: 0 20px;
-  color:272142;
+  color: var(--branding-color);
+  background: var(--secondary-color);
   padding: 10px 14px;
   border-radius: 50%;
-  font-size: 40px;
-  width: 30px;
+  font-size: 18px;
   transition: all 100ms ease-in-out;
 }
 
@@ -224,10 +197,7 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
-@media (max-width: 960px) {
-  .container{
-      width: 700px;
-  }
+@media (max-width: 900px) {
   h1 {
     font-size: 48px;
     line-height: 1.5;
@@ -259,14 +229,8 @@ footer .social-links a:hover {
     display: block;
     text-align: center;
     margin: 0 20px;
-    color: #272142;
   }
   .hero {
     padding: 80px 20px;
   }
-}
-
-i{
-  padding: 10px 10px;
-  color: #272142;
 }
